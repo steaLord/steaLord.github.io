@@ -59,20 +59,44 @@
                 <span>Переводы</span>
                 <div class="block">
                     <div class="trans_header">
-                        <a href='#'>Во времени</a>
-                        <a href='#'>С карты на карту</a>
-                        <a href='#'>По телефону</a>
-                        <a href='#'>По реквизитам</a>
+                        <a href='#'><span id="th_btn_1" onclick="border('th_btn_1')">Во времени</span></a>
+                        <a href='#'><span id="th_btn_2" onclick="border('th_btn_2')">С карты на карту</span></a>
+                        <a href='#'><span id="th_btn_3" onclick="border('th_btn_3')">По телефону</span></a>
+                        <a href='#'><span id="th_btn_4" onclick="border('th_btn_4')">По реквизитам</span></a>
+                    </div>
+                    <div class="trans_main">
+                        <div class="trans_row">
+                            <span>Откуда</span>
+                            <select name="select" id="select" class="select">
+                                <option value="1">Дебетовая карта *3478 Visa Gold</option>
+                            </select>
+                        </div>
+                        <div class="trans_row">
+                            <span>Когда</span>
+                            <input class="field" placeholder="Выберите время получения"></input>
+                        </div>
+                        <div class="trans_row">
+                            <span>Куда</span>
+                            <input class="field" placeholder="Выберите место получения"></input>
+                        </div>
+                        <div class="trans_row">
+                            <span>Способ получения</span>
+                            <input class="field" placeholder="Выберите метод получения"></input>
+                        </div>
+                        <div class="trans_row">
+                            <span>Кому</span>
+                            <input class="field" placeholder="Введите имя получателя"></input>
+                        </div>
+                        <div class="trans_row">
+                            <span>Сумма</span>
+                            <input class="field" placeholder="Введите сумму"></input>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="transfer_history">
-                <span>История переводов</span>
-                <div class="block">
-                </div>
-            </div> -->
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

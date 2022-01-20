@@ -162,36 +162,53 @@ a {
     padding: 16px;
 }
 
-.transfers>.block .trans_header>a {
+.transfers>.block .trans_header {
+    margin-bottom: 26px;
+}
+
+.transfers>.block .trans_header>a>span {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 14px;
     color: #17139C;
     margin-right: 16px;
     transition: 0.05s;
 }
 
-.transfers>.block .trans_header>a:hover {
+.transfers>.block .trans_header>a>span:hover {
     border-bottom: 2px solid #DD3E3E;
 }
 
-/* .transfer_history {
+.transfers .trans_main, .transfers .trans_main .trans_row {
     display: flex;
     flex-direction: column;
-    margin-right: 26px;
 }
 
-.transfer_history>span {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0em;
+.transfers .trans_main .trans_row {
+    margin-bottom: 16px;
+}
+
+.transfers .trans_main .trans_row span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
     margin-bottom: 8px;
 }
 
-.transfer_history>.block {
-    height: 408px;
-    width: 688px;
-    background-color: #fff;
-    padding: 16px;
-} */
+.trans_main .trans_row .select {
+    background: url(images/VISA.png);
+    background-position: 8px, center;
+    background-repeat: no-repeat;
+    padding-left: 43px;
+    border: 1.5px solid #ADB5BD;
+    width: 432px;
+    height: 32px;
+
+}
+
+.trans_main .trans_row .field {
+    border: 1.5px solid #ADB5BD;
+    width: 432px;
+    height: 32px;
+    padding-left: 7.71px;
+}
