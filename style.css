@@ -179,6 +179,10 @@ a {
     border-bottom: 2px solid #DD3E3E;
 }
 
+.th_btn_active {
+    border-bottom: 2px solid #DD3E3E;
+}
+
 .transfers .trans_main, .transfers .trans_main .trans_row {
     display: flex;
     flex-direction: column;
