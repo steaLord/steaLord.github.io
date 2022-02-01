@@ -1,0 +1,124 @@
+/* SECTION ONE */
+
+.hero {
+  padding: 110px 0;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .content {
+  max-width: 545px;
+}
+.hero h1 {
+  color: #1f2e35;
+}
+
+.hero h2 {
+  margin-bottom: 24px;
+}
+
+.hero p {
+  color: #30444e;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  margin-bottom: 24px;
+}
+
+/* SECTION TWO */
+
+.welcome {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+}
+
+.welcome .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.welcome .section_title {
+  max-width: 454px;
+}
+
+.welcome .main_p {
+  max-width: 520px;
+}
+/* SECTION THREE */
+
+.product_and_service {
+  padding: 110px 0;
+}
+.product_and_service .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product_and_service .content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 41px 0;
+}
+.product_and_service .column_item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.product_and_service .red500 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  margin: 15px 0;
+}
+.product_and_service .main_p {
+  max-width: 319px;
+  margin-bottom: 15px;
+  min-height: 108px;
+}
+.product_and_service .btn {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 8px 16px;
+  justify-self: end;
+}
+@media (max-width: 768px) {
+  .hero,
+  .welcome,
+  .product_and_service {
+    padding: 30px 0;
+  }
+  .hero .container {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .welcome .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product_and_service .container .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 0;
+  }
+  .product_and_service .container .content .column_item {
+    align-items: center;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 425px) {
+  .hero img,
+  .welcome img {
+    max-width: 100%;
+  }
+  .hero,
+  .product_and_service {
+    text-align: center;
+  }
+}

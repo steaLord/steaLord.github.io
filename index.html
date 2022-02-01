@@ -1,102 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSI Home</title>
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/page_one.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <!-- <h1>CSS Grid</h1> -->
-    <!-- <div class="container">
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-    </div> -->
-    <div class="site">
-        <div class="header">
-            <input type="text" placeholder="Поиск">
-            <div class="nav">
-                <a href="#"><img src="images/Screen.png"></a>
-                <span>999 999,99 ₽</span>
-                <span>|</span>
-                <a href="#"><img src="images/Messages.png"></a>
-                <span>Имя Фамилия</span>
-                <a href="#"><img src="images/Userpic.png"></a>
-            </div>
+  <body>
+    <section class="header">
+      <div class="container">
+        <a href="index.html"
+          ><img src="images/general/logo.png" alt="logo" class="logo"
+        /></a>
+        <div class="nav_bar">
+          <a href="index.html" class="nav_link br">Home</a>
+          <a href="services.html" class="nav_link">Services</a>
+          <a href="product.html" class="nav_link">Product</a>
+          <a href="technology.html" class="nav_link">Technology</a>
+          <a href="about_dsi.html" class="nav_link"
+            >About<img src="images/general/chevron_down.png"
+          /></a>
+          <a href="#" class="nav_link"
+            >Client<img src="images/general/chevron_down.png"
+          /></a>
+          <a href="#" class="nav_link">Partner</a>
         </div>
-        <div class="sidebar">
-            <a href="#" class="logo"><img src="images/Logo.png" alt="logo"></a>
-            <a href='#' class="sb_btn">
-                <img src="images/Main.png">
-                <span>Продукты</span>
-            </a>
-            <a href='#' class="sb_btn">
-                <img src="images/Transfers.png">
-                <span>Переводы</span>
-            </a>
-            <a href='#' class="sb_btn">
-                <img src="images/Payments.png">
-                <span>Платежи</span>
-            </a>
-            <a href='#' class="sb_btn">
-                <img src="images/History.png">
-                <span>История</span>
-            </a>
-            <a href='#' class="sb_btn">
-                <img src="images/Settings.png">
-                <span>Настройки</span>
-            </a>
+        <div class="media_bar">
+          <a href="index.html" class="media_link"
+            ><img src="images/general/home.png" alt="home_link"
+          /></a>
+          <a href="#" class="media_link"
+            ><img src="images/general/mail.png" alt="mail_link"
+          /></a>
+          <a href="#" class="media_link"
+            ><img src="images/general/shuffle.png" alt="shuffle"
+          /></a>
         </div>
+        <div class="burger" onclick="OnOffAction(),burger()"></div>
+      </div>
+    </section>
+    <section class="hero">
+      <div class="container">
         <div class="content">
-            <div class="transfers">
-                <span>Переводы</span>
-                <div class="block">
-                    <div class="trans_header">
-                        <a href='#'><span id="th_btn_1" onclick="border('th_btn_1')">Во времени</span></a>
-                        <a href='#'><span id="th_btn_2" onclick="border('th_btn_2')">С карты на карту</span></a>
-                        <a href='#'><span id="th_btn_3" onclick="border('th_btn_3')">По телефону</span></a>
-                        <a href='#'><span id="th_btn_4" onclick="border('th_btn_4')">По реквизитам</span></a>
-                    </div>
-                    <div class="trans_main">
-                        <div class="trans_row">
-                            <span>Откуда</span>
-                            <select name="select" id="select" class="select">
-                                <option value="1">Дебетовая карта *3478 Visa Gold</option>
-                            </select>
-                        </div>
-                        <div class="trans_row">
-                            <span>Когда</span>
-                            <input class="field" placeholder="Выберите время получения"></input>
-                        </div>
-                        <div class="trans_row">
-                            <span>Куда</span>
-                            <input class="field" placeholder="Выберите место получения"></input>
-                        </div>
-                        <div class="trans_row">
-                            <span>Способ получения</span>
-                            <input class="field" placeholder="Выберите метод получения"></input>
-                        </div>
-                        <div class="trans_row">
-                            <span>Кому</span>
-                            <input class="field" placeholder="Введите имя получателя"></input>
-                        </div>
-                        <div class="trans_row">
-                            <span>Сумма</span>
-                            <input class="field" placeholder="Введите сумму"></input>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <h1 class="page_hero_text">Making the most of the ever-growing</h1>
+          <h2 class="red700 page_hero_text">Information Technology</h2>
+          <p>
+            Managed by a team of professional experts with extensive experience
+            and impressive track records
+          </p>
+          <a href="#" class="btn"><span>Read more</span></a>
         </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-
+        <img src="images/home/hero_img.png" />
+      </div>
+    </section>
+    <section class="welcome">
+      <div class="container">
+        <img src="images/home/welcome_img.png" />
+        <div class="content">
+          <h2 class="section_title">
+            Welcome to
+            <span class="red500">Dwidasa Samsara Indonesia (DSI)</span>
+          </h2>
+          <br /><br />
+          <p class="main_p">
+            Dwidasa Samsara Indonesia (DSI) was firstly established in 2010 by
+            the founders, who each of them has a common end objective to
+            innovate new creations by making the most of the ever-growing
+            information technology through <span class="red500">DSI</span>’s
+            distinct front-end based application concept. <br /><br />Managed by
+            a team of professional experts with extensive experience and
+            impressive track records, <span class="red500">DSI</span> believes
+            that continuous improvements and innovations assure your business to
+            run effectively and efficiently.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="product_and_service">
+      <div class="container">
+        <h2 class="section_title">Product and Service</h2>
+        <div class="content">
+          <div class="column_item">
+            <img src="images/home/product-description.png" />
+            <h2 class="red500">Our Product</h2>
+            <p class="main_p">
+              Our product is made on the base of our team’s careful research and
+              analyses, ranging from internet based application.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+          <div class="column_item">
+            <img src="images/home/verified.png" />
+            <h2 class="red500">Our Service</h2>
+            <p class="main_p">
+              DSI’s shared service solutions focus on the front-end based
+              software development, designed specifically for the banking and
+              financial sectors.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+          <div class="column_item">
+            <img src="images/home/cogwheel.png" />
+            <h2 class="red500">Our Technology</h2>
+            <p class="main_p">
+              First JAVA, runs on more than 850 million personal computers
+              worldwide, and on billions of devices worldwide, including mobile
+              and TV devices.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="communication">
+      <div class="container">
+        <div class="address">
+          <img src="images/general/logo.png" />
+          <h2>PT Dwidasa Samsara Indonesia</h2>
+          <p>Ruko Jalur Sutera 29A No. 53</p>
+          <p>Alam Sutera Serpong, Tangerang 15323</p>
+        </div>
+        <div class="contact">
+          <h2>Contact</h2>
+          <p>Phone : +62.21.5314.1135</p>
+          <p>Fax : +62.21.5314.1135</p>
+          <p>Email : community@dwidasa.com</p>
+        </div>
+        <img src="images/general/companies_logos.png" />
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <p>
+          <span>Copyright</span> © 2015<br class="br" />
+          <span class="media_hide">-</span> Dwidasa Samsara Indonesia
+        </p>
+      </div>
+    </section>
+    <script src="js/burger.js"></script>
+  </body>
 </html>

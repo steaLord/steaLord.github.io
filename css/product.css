@@ -1,0 +1,43 @@
+/* SECTION ONE */
+.hero {
+  background: linear-gradient(to bottom, #ee4248 90%, #f6f6f6 10%);
+}
+.hero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 745px;
+  padding: 67px 0;
+  text-align: center;
+}
+.hero .page_hero_text {
+  color: #fff;
+}
+.hero span {
+  font-weight: 400;
+}
+/* SECTION TWO */
+.info .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 95px 0;
+}
+.info img {
+  max-width: 100%;
+}
+.info .main_p {
+  padding-top: 29px;
+  max-width: 500px;
+}
+@media (max-width: 768px) {
+  .info .container {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+}
+@media (max-width: 425px) {
+  .info .container {
+    padding: 30px 0;
+  }
+}
