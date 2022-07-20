@@ -114,6 +114,27 @@ span {
 .br {
   display: none;
 }
+.team_link {
+  background-color: #333333;
+  padding: 15px 0;
+}
+.team_link .container {
+  display: flex;
+  justify-content: center;
+}
+.team_link .btn.reverse {
+  padding: 10px 105px;
+  width: 100%;
+  text-align: center;
+  outline: 1px solid #333;
+  color: #333;
+}
+.team_link .btn.reverse:hover {
+  background: #333;
+  color: #fff;
+  outline: 1px solid #fff;
+}
+
 /* HEADER */
 
 .header {
@@ -157,12 +178,19 @@ span {
 .media_link {
   margin: 0 12px;
 }
+.employee_name {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1;
+  color: #263238;
+}
 /* BURGER */
 .burger {
   display: none;
   width: 40px;
   height: 6px;
-  background: #333;
+  background: #1f2e35;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
@@ -172,7 +200,7 @@ span {
   position: absolute;
   width: 40px;
   height: 6px;
-  background: #333;
+  background: #1f2e35;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
@@ -194,7 +222,6 @@ span {
 .nav_bar.open ~ .burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
 }
-
 /* COMMUNICATION */
 .communication {
   padding: 24px 0;
@@ -256,16 +283,17 @@ span {
 .footer span {
   font-weight: 400;
 }
-
+@media (max-width: 1024px) {
+  .container {
+    max-width: 970px;
+  }
+}
 @media (max-width: 768px) {
   .container {
     max-width: 720px;
   }
   .nav_link {
     margin: 0 12px;
-  }
-  .nav_link img {
-    display: none;
   }
   .media_link {
     margin: 0 6px;
@@ -289,13 +317,14 @@ span {
     left: 0;
     right: 0;
     z-index: 10;
+    opacity: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #fff;
     transition: top 1s ease;
     padding: 120px 0;
-    display: none;
+    display: flex;
   }
   .header .nav_link {
     font-size: 25px;
@@ -342,5 +371,10 @@ span {
 @media (max-width: 320px) {
   .container {
     max-width: 300px;
+  }
+}
+@media (min-width: 769px) {
+  .hide768 {
+    display: none;
   }
 }

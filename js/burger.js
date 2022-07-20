@@ -13,6 +13,7 @@ function burger() {
     window.scrollTo({ top: 0, behavior: "smooth" });
     nav_bar.style.display = "flex";
     nav_bar.style.top = "0";
+    nav_bar.style.opacity = "1";
     html.style.overflow = "hidden";
     nav_bar.classList.add("open");
   } else {
